@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3312BBC824FBDF6200DEEAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312BBC724FBDF6200DEEAD3 /* AppDelegate.swift */; };
 		3312BBCA24FBDF6200DEEAD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312BBC924FBDF6200DEEAD3 /* SceneDelegate.swift */; };
-		3312BBCC24FBDF6200DEEAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312BBCB24FBDF6200DEEAD3 /* ViewController.swift */; };
 		3312BBCF24FBDF6200DEEAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3312BBCD24FBDF6200DEEAD3 /* Main.storyboard */; };
 		3312BBD124FBDF6500DEEAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3312BBD024FBDF6500DEEAD3 /* Assets.xcassets */; };
 		3312BBD424FBDF6500DEEAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3312BBD224FBDF6500DEEAD3 /* LaunchScreen.storyboard */; };
+		3312BBE524FBF56700DEEAD3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312BBE424FBF56700DEEAD3 /* MainViewController.swift */; };
+		3312BBE924FBF98800DEEAD3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312BBE824FBF98800DEEAD3 /* TableViewCell.swift */; };
+		3312BBEB24FBFAB400DEEAD3 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312BBEA24FBFAB400DEEAD3 /* Cell.swift */; };
+		33D304B424FD2D9200B00186 /* Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D304B324FD2D9200B00186 /* Subscriptions.swift */; };
+		33D304B624FD363100B00186 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D304B524FD363000B00186 /* AddNewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3312BBC424FBDF6200DEEAD3 /* Robby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3312BBC724FBDF6200DEEAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3312BBC924FBDF6200DEEAD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3312BBCB24FBDF6200DEEAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3312BBCE24FBDF6200DEEAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3312BBD024FBDF6500DEEAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3312BBD324FBDF6500DEEAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3312BBD524FBDF6500DEEAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3312BBE424FBF56700DEEAD3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3312BBE824FBF98800DEEAD3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3312BBEA24FBFAB400DEEAD3 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		33D304B324FD2D9200B00186 /* Subscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriptions.swift; sourceTree = "<group>"; };
+		33D304B524FD363000B00186 /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		3312BBC624FBDF6200DEEAD3 /* Robby */ = {
 			isa = PBXGroup;
 			children = (
+				3312BBE124FBED1400DEEAD3 /* Views */,
+				3312BBE024FBED0000DEEAD3 /* Controllers */,
+				3312BBDF24FBECF500DEEAD3 /* Models */,
 				3312BBC724FBDF6200DEEAD3 /* AppDelegate.swift */,
 				3312BBC924FBDF6200DEEAD3 /* SceneDelegate.swift */,
-				3312BBCB24FBDF6200DEEAD3 /* ViewController.swift */,
-				3312BBCD24FBDF6200DEEAD3 /* Main.storyboard */,
 				3312BBD024FBDF6500DEEAD3 /* Assets.xcassets */,
 				3312BBD224FBDF6500DEEAD3 /* LaunchScreen.storyboard */,
 				3312BBD524FBDF6500DEEAD3 /* Info.plist */,
 			);
 			path = Robby;
+			sourceTree = "<group>";
+		};
+		3312BBDF24FBECF500DEEAD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3312BBEA24FBFAB400DEEAD3 /* Cell.swift */,
+				33D304B324FD2D9200B00186 /* Subscriptions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3312BBE024FBED0000DEEAD3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3312BBE424FBF56700DEEAD3 /* MainViewController.swift */,
+				3312BBE824FBF98800DEEAD3 /* TableViewCell.swift */,
+				33D304B524FD363000B00186 /* AddNewViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3312BBE124FBED1400DEEAD3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3312BBCD24FBDF6200DEEAD3 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3312BBCC24FBDF6200DEEAD3 /* ViewController.swift in Sources */,
+				33D304B424FD2D9200B00186 /* Subscriptions.swift in Sources */,
 				3312BBC824FBDF6200DEEAD3 /* AppDelegate.swift in Sources */,
+				3312BBE924FBF98800DEEAD3 /* TableViewCell.swift in Sources */,
+				3312BBEB24FBFAB400DEEAD3 /* Cell.swift in Sources */,
 				3312BBCA24FBDF6200DEEAD3 /* SceneDelegate.swift in Sources */,
+				33D304B624FD363100B00186 /* AddNewViewController.swift in Sources */,
+				3312BBE524FBF56700DEEAD3 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeworthington.Robby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeworthington.Robby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
