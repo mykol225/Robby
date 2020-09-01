@@ -32,7 +32,7 @@ class TableViewCell: UITableViewCell {
         cellAmount.text = cell.amount
         cellDescription.text = cell.description
         cellTimeUntil.text = cell.period
-        cellIcon.image = cell.icon
+        cellIcon.image = cell.icon ?? UIImage(named: "hare.fill")
     }
 
 }

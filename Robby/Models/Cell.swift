@@ -13,9 +13,9 @@ class Cell {
     let amount: String
     let description: String
     let period: String
-    let icon: UIImage
+    let icon: UIImage?
     
-    init(icon: UIImage, name: String, amount: String, description: String, period: String) {
+    init(icon: UIImage?, name: String, amount: String, description: String, period: String) {
         self.icon = icon
         self.name = name
         self.amount = amount
