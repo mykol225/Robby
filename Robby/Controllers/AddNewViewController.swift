@@ -57,13 +57,14 @@ class AddNewViewController: UIViewController, UITextFieldDelegate {
     
     // Editing is done and everything checks out, keyboard closes, so change the nameTextField text to whatever
     func textFieldDidEndEditing(_ textField: UITextField) {
-        activeTextField.text = textField.text
+        activeTextField.text = textField.text  //changing the activeTextField's text to this textField's text
     }
     
     // Runs when user hits the return button from a text field
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         //resigns first responder status (aka: exit textfield)
         textField.endEditing(true)
+        textField.resignFirstResponder()
         return true
     }
 
@@ -72,3 +73,4 @@ class AddNewViewController: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: true, completion: nil)
     }
 }
+

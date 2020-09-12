@@ -22,13 +22,13 @@ class TableViewCell: UITableViewCell {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-        if (selected) {
-            super.setSelected(true, animated: animated)
-            cellContentView.backgroundColor = UIColor.systemGray4
-        } else {
-            super.setSelected(false, animated: animated)
-            cellContentView.backgroundColor = UIColor.systemGray6
-        }
+//        if (selected) {
+//            super.setSelected(true, animated: animated)
+//            cellContentView.backgroundColor = UIColor.systemGray4
+//        } else {
+//            super.setSelected(false, animated: animated)
+//            cellContentView.backgroundColor = UIColor.systemGray6
+//        }
     }
     
     func setSubs(cell: Cell) {

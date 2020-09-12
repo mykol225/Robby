@@ -140,6 +140,7 @@
                                             <outlet property="cellIcon" destination="Swb-8r-k2Y" id="GnV-cA-n4b"/>
                                             <outlet property="cellName" destination="UpJ-LV-MEu" id="zTI-Co-xVX"/>
                                             <outlet property="cellTimeUntil" destination="E1d-SH-cMe" id="o1A-Eu-xdD"/>
+                                            <segue destination="RTc-Uw-drl" kind="presentation" identifier="editCell" id="zVQ-m3-KAj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -256,7 +257,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="&quot;Netflix&quot;" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MR1-uM-lkr">
                                                 <rect key="frame" x="105" y="0.0" width="245" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="organization"/>
+                                                <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="RTc-Uw-drl" id="Pev-sl-vbL"/>
                                                 </connections>
@@ -279,7 +280,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="&quot;Home theatre&quot;" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0cj-qf-22H">
                                                 <rect key="frame" x="105" y="0.0" width="245" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="RTc-Uw-drl" id="3uW-Ap-FXM"/>
                                                 </connections>
@@ -401,6 +402,9 @@
             <point key="canvasLocation" x="992.75362318840587" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zVQ-m3-KAj"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="hare.fill" catalog="system" width="128" height="91"/>
         <image name="plus" catalog="system" width="128" height="113"/>

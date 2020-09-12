@@ -75,8 +75,22 @@ extension MainViewController: AddNewSubDelegate {
     }
 }
 
+// Bug1:
+// Have to click a cell twice (most of the time) to open AddNewViewController modal.
+// First click changes the selection state
+// Second click (anywhere on screen) opens the modal.
+// Removing
+
+// Bug2:
+// Opening AddNewViewController from clicking a cell
+// Then choosing Add New button causes a crash
+
 
 // todo
 // add an action to function didSelectRowAt [row 66 in code]
 // that opens addNewViewController with that cell's info
 // set to the textfield's UITextField.text
+
+
+// todo
+// figure out how to store that info. so it's still there when user returns
