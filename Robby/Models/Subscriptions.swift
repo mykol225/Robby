@@ -6,23 +6,17 @@
 //  Copyright © 2020 Michael Worthington. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-struct Subscriptions {
+class Subscriptions {
     
-    let subsArray: [Cell] = []
+    var subsArray: [Cell] = []
     
-    func newSub() {
-//        Cell(icon: UIImage(systemName: "hare.fill"), name: "Petco Delivery", amount: "$56.45", description: "On Cap One Card", period: "Today")
-        
+    func newSub(addedCell: Cell) {
+        subsArray.append(addedCell)
     }
     
+    func isSubsArrayEmpty() -> Bool {
+        subsArray.count < 1 ? true : false
+    }
 }
-// neeeds to
-// initialize an empty array as a variable
-// create a cell with an image, name, description, amount and period.
-//       let cell1 = Cell(icon: UIImage(systemName: "hare.fill") ?? tempImage, name: "Petco Delivery", amount: "$56.45", description: "On Cap One Card", period: "Today")
-// then append that cell into an array
-//       tempCellArray.append(cell1)
-// then build the whole array on viewDidLoad()
-// then it can be sent to the tableview

@@ -15,16 +15,20 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var cellDescription: UILabel!
     @IBOutlet weak var cellTimeUntil: UILabel!
     @IBOutlet weak var cellIcon: UIImageView!
-    
+    @IBOutlet weak var cellContentView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        if (selected) {
+            super.setSelected(true, animated: animated)
+            cellContentView.backgroundColor = UIColor.systemGray4
+        } else {
+            super.setSelected(false, animated: animated)
+            cellContentView.backgroundColor = UIColor.systemGray6
+        }
     }
     
     func setSubs(cell: Cell) {
