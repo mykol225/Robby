@@ -10,6 +10,7 @@ import UIKit
 
 protocol AddNewSubDelegate {
     func newSub(name: String, description: String, amount: String, period: String, icon: String)
+//    func editSub(name: String, description: String, amount: String, period: String, icon: String)
 }
 
 class AddNewViewController: UIViewController, UITextFieldDelegate {
@@ -20,7 +21,7 @@ class AddNewViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var periodTextField: UITextField!
     @IBOutlet weak var iconTextField: UITextField!
     
-    var passedInfo: String = ""
+    var passedName: String = ""
     
     var activeTextField: UITextField!
     
@@ -33,7 +34,7 @@ class AddNewViewController: UIViewController, UITextFieldDelegate {
         amountTextField.delegate = self
         periodTextField.delegate = self
         iconTextField.delegate = self
-        print(passedInfo)
+        print("PassedName is \(passedName)")
     }
     
     // Changes the text field currently being edited to the active teext field
@@ -62,7 +63,7 @@ class AddNewViewController: UIViewController, UITextFieldDelegate {
     
     // Runs when user hits the return button from a text field
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        //resigns first responder status (aka: exit textfield)
+        //resigns first responder status (aka: exit textfield/ close keyboard)
         textField.endEditing(true)
         textField.resignFirstResponder()
         return true
@@ -70,6 +71,8 @@ class AddNewViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func addNewSub(_ sender: Any) {
         addNewSubDelegate.newSub(name: nameTextField.text ?? "name", description: descriptionTextField.text ?? "description", amount: amountTextField.text ?? "amount", period: periodTextField.text ?? "period", icon: iconTextField.text ?? "icon")
+        // need to make a condition that runs editSub if editCell segue was used
+        // also change button to 'edit'
         self.dismiss(animated: true, completion: nil)
     }
 }

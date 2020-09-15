@@ -20,3 +20,5 @@ class Subscriptions {
         subsArray.count < 1 ? true : false
     }
 }
+
+    // need func to change a Cell at a specific index
